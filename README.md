@@ -370,7 +370,7 @@ bash run_infer_310.sh [MINDIR_PATH] [DATASET_PATH] [NEED_PREPROCESS] [DEVICE_ID]
 资源	Nvidia Titan V	Nvidia Titan V
 上传日期	-	-
 MindSpore版本	1.5.0	1.5.0
-训练数据集  SVHN	  SVHN
+训练数据集   SVHN	  SVHN
 训练参数	epoch=50, batch_size=128	epoch=50, batch_size=128, lr_max=0.08
 优化器	Momentum	Momentum
 输出t	损失	损失
