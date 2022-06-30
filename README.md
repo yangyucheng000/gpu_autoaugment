@@ -365,20 +365,20 @@ bash run_infer_310.sh [MINDIR_PATH] [DATASET_PATH] [NEED_PREPROCESS] [DEVICE_ID]
 
 ## 模型描述
 
-|
-参数	单卡 GPU	八卡 GPU
-资源	Nvidia Titan V	Nvidia Titan V
-上传日期	-	-
-MindSpore版本	1.5.0	1.5.0
-训练数据集   SVHN	  SVHN
-训练参数	epoch=50, batch_size=128	epoch=50, batch_size=128, lr_max=0.08
-优化器	Momentum	Momentum
-输出t	损失	损失
-准确率 	98.25%	98.36%
-速度	242.36 ms/step	351.9 ms/step
-总时长	16 h	3.1 h
-微调检查点	289.8M (.ckpt file)	289.8M (.ckpt file)
-脚本	autoaugment	autoaugment
+| parameter           | Single card GPU           | Eight cards GPU                       |
+|:--------------------|:--------------------------|:--------------------------------------|
+| resource            | Nvidia Titan V            | Nvidia Titan V                        |
+| Upload date         | -                         | -                                     |
+| MindSpore version   | 1.5.0                     | 1.5.0                                 |
+| Training data set   | SVHN                      | SVHN                                  |
+| Training parameters | epoch=50, batch_size=128  | epoch=50, batch_size=128, lr_max=0.08 |
+| Optimizer           | Momentum                  | Momentum                              |
+| Output              | loss                      | loss                                  |
+| Top-1, %            | 98.25%                    | 98.36%                                |
+| speed               | 242.36 ms/step            | 351.9 ms/step                         |
+| Total time          | 16 h                      | 3.1 h                                 |
+| Fine-tune checkpoint| 289.8M (.ckpt file)       | 289.8M (.ckpt file)                   |
+| script              | [autoaugment](./)         | [autoaugment](./)                     |
 
 ## 随机情况说明
 
