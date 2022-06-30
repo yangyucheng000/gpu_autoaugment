@@ -73,7 +73,7 @@ cifar-10-batches-bin
 
 ## 环境要求
 
-- 硬件（）
+- 硬件（GPU）
     - 准备处理器搭建硬件环境。
 - 框架
     - [MindSpore](https://www.mindspore.cn/install/)
@@ -85,7 +85,7 @@ cifar-10-batches-bin
 
 完成计算设备和框架环境的准备后，开发者可以运行如下指令对本示例进行训练和评估。
 
-- 处理器环境运行
+- GPU处理器环境运行
 
 ```bash
 # 8卡分布式训练
@@ -365,20 +365,20 @@ bash run_infer_310.sh [MINDIR_PATH] [DATASET_PATH] [NEED_PREPROCESS] [DEVICE_ID]
 
 ## 模型描述
 
-| 参数 | 单卡 910 | 八卡 910 |
-|:---|:---|:---|
-| 资源 |  910 |  910 |
-| 上传日期 | 2021.06.21 | 2021.06.24 |
-| MindSpore版本 | 1.2.0 | 1.2.0 |
-| 训练数据集 | Cifar10 | Cifar10 |
-| 训练参数 | epoch=200, batch_size=128 | epoch=200, batch_size=128, lr_max=0.8 |
-| 优化器 | Momentum | Momentum |
-| 输出 | 损失 | 损失 |
-| 准确率 | 97.42% | 97.39% |
-| 速度 | 97.73 ms/step | 106.29 ms/step |
-| 总时长 | 127 min | 17 min |
-| 微调检查点 | 277M（.ckpt文件) | 277M（.ckpt文件) |
-| 脚本 | [autoaugment](./) | [autoaugment](./) |
+|
+参数	单卡 GPU	八卡 GPU
+资源	Nvidia Titan V	Nvidia Titan V
+上传日期	-	-
+MindSpore版本	1.5.0	1.5.0
+训练数据集  SVHN	  SVHN
+训练参数	epoch=50, batch_size=128	epoch=50, batch_size=128, lr_max=0.08
+优化器	Momentum	Momentum
+输出t	损失	损失
+准确率 	98.25%	98.36%
+速度	242.36 ms/step	351.9 ms/step
+总时长	16 h	3.1 h
+微调检查点	289.8M (.ckpt file)	289.8M (.ckpt file)
+脚本	autoaugment	autoaugment
 
 ## 随机情况说明
 
